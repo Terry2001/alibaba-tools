@@ -6,6 +6,7 @@ import artoria.crypto.KeyUtils;
 import artoria.exception.ExceptionUtils;
 import artoria.exchange.JsonUtils;
 import artoria.net.*;
+import artoria.robot.MessageRobot;
 import artoria.util.Assert;
 import artoria.util.CollectionUtils;
 import artoria.util.StringUtils;
@@ -24,7 +25,7 @@ import static artoria.common.Constants.*;
  * The ding talk robot.
  * @author Kahle
  */
-public class DingTalkRobot {
+public class DingTalkRobot implements MessageRobot {
     private static Logger log = LoggerFactory.getLogger(DingTalkRobot.class);
     private final HttpClient httpClient;
     private final String webHook;
@@ -93,6 +94,7 @@ public class DingTalkRobot {
         return send(JsonUtils.toJsonString(data));
     }
 
+    @Override
     public Object send(Object message) {
         try {
             Long timestamp = System.currentTimeMillis();
