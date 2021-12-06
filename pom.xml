@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.kahlkn</groupId>
     <artifactId>alibaba-tools</artifactId>
-    <version>1.0.0.20191021.beta</version>
+    <version>1.0.0.20210901f.beta</version>
     <packaging>jar</packaging>
     <name>Alibaba Tools</name>
     <url>https://github.com/kahlkn/alibaba-tools</url>
@@ -59,13 +59,13 @@
         <dependency>
             <groupId>com.github.kahlkn</groupId>
             <artifactId>artoria</artifactId>
-            <version>1.0.0.20210823.beta</version>
+            <version>1.0.0.20210901f.beta</version>
         </dependency>
 
         <dependency>
             <groupId>com.github.kahlkn</groupId>
             <artifactId>artoria-extend</artifactId>
-            <version>1.0.0.20210823.beta</version>
+            <version>1.0.0.20210901f.beta</version>
             <scope>provided</scope>
         </dependency>
         <!-- ///// end artoria //// -->
@@ -74,7 +74,7 @@
         <dependency>
             <groupId>com.github.kahlkn</groupId>
             <artifactId>misaka</artifactId>
-            <version>1.0.0.20191020.beta</version>
+            <version>1.0.0.20210901f.beta</version>
         </dependency>
         <!-- ///// end misaka //// -->
 
